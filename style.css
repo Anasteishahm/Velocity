@@ -362,60 +362,17 @@ p {
     color: #9E9E9E;
 }
 
- @media (max-width: 400px) {
-     .header__nav li + li {
-         margin-left: 15px;
-     }
-
-     .welcome__heading {
-         font-size: 40px;
-         margin-bottom: 50px;
-     }
-
-     .welcome__links a {
-         display: block;
-         width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-     }
-
-     .welcome__links > * + * {
-         margin: 0;
-         margin-top: 20px;
-     }
-
-     body {
-         font-size: 12px;
-     }
-
-     .about .card h4 {
-        font-size: 16px;
-     }
-
-     .services .card .link {
-         font-size: 14px;
-     }
-
-     .tabs__item h4 {
-         font-size: 24px;
-     }
- }
-
- @media (max-width: 600px) {
-     .services .cards-wrapper {
-         flex-direction: column;
-         align-items: center;
-         gap: 40px;
-     }
-
-     .services .card {
-         width: 80%;
-     }
-
-     .title-wrapper {
-         margin-bottom: 40px;
-     }
- }
+ @media (max-width: 829px) {
+    .footer__desc-container {
+        justify-content: space-evenly;
+    }
+    .footer__desc h4 {
+        margin-bottom: 10px;
+    }
+    .footer__desc {
+        padding-top: 0;
+    }
+}
 
  @media (max-width: 660px) {
     .tabs__nav button {
@@ -423,9 +380,64 @@ p {
         margin: 0 auto;
         padding: 10px 30px;
     }
+    .tabs__nav button + button {
+        margin-top: 10px;
+        margin-left: auto;
+    }
+}
 
-     .tabs__nav button + button {
-         margin-top: 10px;
+ @media (max-width: 600px) {
+    .services .cards-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .services .card {
+        width: 80%;
+    }
+    .title-wrapper {
+        margin-bottom: 40px;
+    }
+}
+
+
+ @media (max-width: 400px) {
+     .header__nav li + li {
+         margin-left: 15px;
+     }
+     .welcome__heading {
+         font-size: 40px;
+         margin-bottom: 50px;
+     }
+     .welcome__links a {
+         display: block;
+         width: 80%;
          margin-left: auto;
+         margin-right: auto;
+     }
+     .welcome__links > * + * {
+         margin: 0;
+         margin-top: 20px;
+     }
+     body {
+         font-size: 12px;
+     }
+     .about .card h4 {
+        font-size: 16px;
+     }
+     .services .card .link {
+         font-size: 14px;
+     }
+     .tabs__item h4 {
+         font-size: 24px;
      }
  }
+
+
+
+
+
+
+
+
+
