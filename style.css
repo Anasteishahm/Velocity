@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /*Загальні стилі*/
+
 body {
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
@@ -56,7 +57,6 @@ p {
     color: #ffffff;
 }
 
-
 /*-------HEADER--------*/
 
 .header {
@@ -104,7 +104,6 @@ p {
 .header__nav a:active {
     color: #0062b6;
 }
-
 
 /*------WELCOME--------*/
 
@@ -210,7 +209,6 @@ p {
 
 /*-----ABOUT (WHAT WE DO)------*/
 
-
 .services .cards-wrapper {
     display: flex;
     justify-content: space-between;
@@ -238,12 +236,6 @@ p {
 
 /*-----TABS------*/
 
-.tab-section {
-}
-
-.tabs {
-}
-
 .tabs__nav {
     margin-bottom: 50px;
 }
@@ -266,6 +258,19 @@ p {
     margin-left: 15px;
 }
 
+.tabs__item {
+    animation: fade 1s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .tabs__item img {
     margin-bottom: 15px;
 }
@@ -283,9 +288,6 @@ p {
 }
 
 /*-----FOOTER------*/
-
-.footer {
-}
 
 .footer__desc {
     padding: 35px 0;
@@ -362,82 +364,84 @@ p {
     color: #9E9E9E;
 }
 
- @media (max-width: 829px) {
+@media (max-width: 829px) {
     .footer__desc-container {
         justify-content: space-evenly;
     }
+
     .footer__desc h4 {
         margin-bottom: 10px;
     }
+
     .footer__desc {
         padding-top: 0;
     }
 }
 
- @media (max-width: 660px) {
+@media (max-width: 660px) {
     .tabs__nav button {
         display: block;
         margin: 0 auto;
         padding: 10px 30px;
     }
+
     .tabs__nav button + button {
         margin-top: 10px;
         margin-left: auto;
     }
 }
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
     .services .cards-wrapper {
         flex-direction: column;
         align-items: center;
         gap: 40px;
     }
+
     .services .card {
         width: 80%;
     }
+
     .title-wrapper {
         margin-bottom: 40px;
     }
 }
 
 
- @media (max-width: 400px) {
-     .header__nav li + li {
-         margin-left: 15px;
-     }
-     .welcome__heading {
-         font-size: 40px;
-         margin-bottom: 50px;
-     }
-     .welcome__links a {
-         display: block;
-         width: 80%;
-         margin-left: auto;
-         margin-right: auto;
-     }
-     .welcome__links > * + * {
-         margin: 0;
-         margin-top: 20px;
-     }
-     body {
-         font-size: 12px;
-     }
-     .about .card h4 {
+@media (max-width: 400px) {
+    .header__nav li + li {
+        margin-left: 15px;
+    }
+
+    .welcome__heading {
+        font-size: 40px;
+        margin-bottom: 50px;
+    }
+
+    .welcome__links a {
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .welcome__links > * + * {
+        margin: 20px 0 0;
+    }
+
+    body {
+        font-size: 12px;
+    }
+
+    .about .card h4 {
         font-size: 16px;
-     }
-     .services .card .link {
-         font-size: 14px;
-     }
-     .tabs__item h4 {
-         font-size: 24px;
-     }
- }
+    }
 
+    .services .card .link {
+        font-size: 14px;
+    }
 
-
-
-
-
-
-
-
+    .tabs__item h4 {
+        font-size: 24px;
+    }
+}
